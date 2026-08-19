@@ -24,6 +24,10 @@ For products and objects, keep the form, packaging, construction, and recognizab
 
 Never add people, animals, or characters unless the user explicitly requests them. Build narrative through environment, props, lighting, and composition instead.
 
+When visual examples are needed to distinguish the period or the three modes, read [references/style-cases.md](references/style-cases.md). Learn only visual logic; do not copy subjects, brands, wording, or exact layouts.
+
+When adapting the system to a person, pet, building, food, or product, read the matching section of [examples/subject-directions.md](examples/subject-directions.md). For detailed person, pet, or architecture cases, follow that file's link to the relevant example document; do not load unrelated case types.
+
 ## Choose one mode
 
 - Default to **Premium Commercial Illustration** when the user simply asks for a Mad Men or vintage Madison Avenue treatment. Read [prompts/premium.md](prompts/premium.md).
