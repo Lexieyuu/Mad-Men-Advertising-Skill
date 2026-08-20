@@ -13,7 +13,7 @@ Preserve breed characteristics, face structure, ear position, coat color, markin
 
 - **Premium:** Make the dog the sole hero in a refined companion-brand commercial painting with no text.
 - **Editorial:** Place the same dog and pose in a warm period home using floor texture, furniture, toys, and light for story.
-- **Agency:** Explore palette, crop, background, and emotional positioning around the same dog.
+- **Agency:** Explore crop, background, and emotional positioning as monochrome hand-drawn roughs around the same dog.
 
 Hard failures: changing breed, idealizing the muzzle, removing the collar, adding an owner, or adding another pet.
 
@@ -28,7 +28,7 @@ Preserve markings, eye color when visible, body proportions, chair relationship,
 
 - **Premium:** Use the cat-and-chair silhouette as a single elegant commercial visual without typography.
 - **Editorial:** Expand the room and household objects while keeping the cat, chair, and pose unchanged.
-- **Agency:** Test crop, chair color, paper tone, and composition without creating alternate cats.
+- **Agency:** Test crop, chair value, paper tone, and composition as black-and-white hand-drawn roughs without creating alternate cats.
 
 Hard failures: straightening the pose, changing the chair relationship, inventing different markings, or adding a person.
 
@@ -43,7 +43,7 @@ Preserve each animal separately: species or breed, markings, scale, pose, and sp
 
 - **Premium:** Treat the pair as one balanced hero grouping with no text.
 - **Editorial:** Build a domestic story using environment and objects without adding a third subject.
-- **Agency:** Explore placement and palette while keeping both identities and their relationship fixed.
+- **Agency:** Explore placement as monochrome hand-drawn roughs while keeping both identities and their relationship fixed.
 
 Hard failures: merging the animals, duplicating one, changing relative size, or adding a third animal or owner.
 
