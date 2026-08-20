@@ -14,7 +14,7 @@ Preserve the tower's silhouette, facade rhythm, floor spacing, roofline, camera 
 
 - **Premium:** Convert the tower into a bold Jet Age commercial artwork with simplified shapes, strong negative space, and no text.
 - **Editorial:** Keep the building dominant while adding period city atmosphere through vehicles, signage shapes without legible brands, light, and street detail. Do not add people by default.
-- **Agency:** Present poster crops, palette studies, and geometric abstractions derived from the same building.
+- **Agency:** Present monochrome hand-drawn poster crops and geometric roughs derived from the same building.
 
 Hard failures: inventing floors, changing the roofline, replacing the facade, or presenting an aged photograph.
 
@@ -30,7 +30,7 @@ Preserve window count and rhythm when legible, entrance placement, major ornamen
 
 - **Premium:** Create a refined destination or property visual centered on the facade without typography.
 - **Editorial:** Build a period neighborhood story through weather, storefront objects, vehicles, and light while keeping the architecture exact.
-- **Agency:** Explore detail crops, color families, and compositional emphasis without redesigning the building.
+- **Agency:** Explore detail crops, tonal values, and compositional emphasis as black-and-white hand-drawn roughs without redesigning the building.
 
 Hard failures: simplifying away defining ornament, moving the entrance, changing window rhythm, or adding unrelated landmarks.
 
@@ -45,7 +45,7 @@ Preserve the landmark's outline, placement, scale relationship, horizon, and cam
 
 - **Premium:** Use the landmark as the single hero with Klein-like confidence in shape and color, but do not copy any specific TWA layout.
 - **Editorial:** Create a city-magazine composition in which environment supports the landmark without competing with it.
-- **Agency:** Explore travel-campaign directions through thumbnails, crops, and palette studies based on the same view.
+- **Agency:** Explore travel-campaign directions through monochrome hand-drawn thumbnails and crops based on the same view.
 
 Hard failures: replacing the landmark, changing the skyline beyond recognition, copying a historic poster, or adding a fake travel brand.
 
