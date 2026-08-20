@@ -51,7 +51,7 @@ After generation, check:
 - No unrelated subject has been added.
 - Premium mode contains no typography.
 - Editorial mode tells its story through setting and composition.
-- Agency mode reads as an internal creative-development board, not a finished advertisement.
+- Agency mode is a monochrome, hand-drawn internal creative-development board made from rough pencil, charcoal, ink, or marker studies—not a finished advertisement.
 - No material from an unrelated previous request appears.
 
 Treat any identity change, pose change, added person, Premium typography, mixed modes, modern AI styling, simple photo filtering, or product redesign as a failed output. Use [tests/evaluation.md](tests/evaluation.md) for broader validation.
@@ -62,5 +62,6 @@ Treat any identity change, pose change, added person, Premium typography, mixed 
 - If the pose changes, strengthen pose lock.
 - If extra subjects appear, strengthen subject-count lock.
 - If Premium contains text, strengthen the no-typography constraint.
+- If Agency contains a colored or polished hero image, remove the color and finish; restore rough black-and-white hand-drawn studies. Permit limited color only when the user explicitly requests color exploration.
 - If the result looks like a filtered photograph, strengthen hand-painted commercial illustration and printed-paper qualities.
 - If the composition is busy, simplify the composition without deleting or altering the subject.
