@@ -13,6 +13,7 @@ Regenerate if any of these occur:
 - any unrequested person, animal, character, model, or duplicate subject appears
 - Premium mode contains any text
 - multiple modes are mixed without an explicit request
+- Agency mode contains a colored or polished hero image when color exploration was not explicitly requested
 - the output looks like modern AI art or only a vintage photo filter
 - unrelated content from a previous request appears
 
@@ -34,7 +35,9 @@ Regenerate if any of these occur:
 ### Agency
 
 - visibly exploratory rather than final
-- includes sketches, layout or crop studies, color thinking, and concise creative notes
+- entirely hand-drawn in black-and-white pencil, charcoal, ink, or marker by default
+- includes unfinished lines, thumbnails, layout or crop studies, arrows, corrections, and concise creative notes
+- contains no colored or polished hero image; limited color studies appear only when explicitly requested
 - contains no invented brand, logo, endorsement, or unsupported claim
 
 ## Subject matrix
