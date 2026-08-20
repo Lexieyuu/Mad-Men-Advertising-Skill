@@ -16,7 +16,7 @@ A visual-direction skill for transforming user-supplied people, pets, architectu
 
 1. **Premium Commercial Illustration** — finished advertising artwork with no typography.
 2. **Editorial Commercial Illustration** — a magazine-style story told through setting, props, light, and composition.
-3. **Advertising Agency Concept Board** — an internal creative-development presentation with sketches, studies, and concise notes.
+3. **Advertising Agency Concept Board** — a black-and-white, hand-drawn internal creative-development presentation with rough sketches, construction lines, studies, and concise notes. Color appears only when explicitly requested.
 
 ## Curated style cases
 
