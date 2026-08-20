@@ -15,7 +15,7 @@ Preserve the exact face, visible features, hairstyle, expression, phone, hand po
 
 - **Premium:** Render the same pose as a polished hand-painted 1960s commercial portrait. Simplify the background, create a strong focal point, and include no text.
 - **Editorial:** Place the same pose within a period dressing-room or apartment story. Use furniture, mirror, light, and objects for narrative. Do not add people.
-- **Agency:** Show crop, palette, material, and layout studies using only the same person and pose. Do not invent alternate models or poses.
+- **Agency:** Show monochrome hand-drawn crop, material, and layout roughs using only the same person and pose. Do not invent alternate models or poses.
 
 Hard failures: unobscuring the face by removing the phone, changing the hand, creating a fashion-model pose, adding typography in Premium, or adding another person.
 
@@ -31,7 +31,7 @@ Preserve the relationship between the body, hands, seat, and camera.
 
 - **Premium:** A confident single-subject brand portrait with restrained period color and clean negative space.
 - **Editorial:** A magazine-style office or living-room story built around the existing seated pose.
-- **Agency:** A presentation board exploring crop, lighting, background tone, and wardrobe material without changing identity or pose.
+- **Agency:** A black-and-white hand-drawn presentation board exploring crop, lighting, background value, and wardrobe material without changing identity or pose.
 
 Hard failures: converting the pose to standing, replacing the chair, changing apparent age, or adding coworkers or family members.
 
@@ -47,7 +47,7 @@ Preserve proportions, stance, foot position, head angle, clothing identity, and 
 
 - **Premium:** Use the silhouette as one elegant hero visual without text.
 - **Editorial:** Build a period storefront, lobby, or travel setting around the same figure and stance.
-- **Agency:** Explore scale, placement, palette, and background treatments around the locked figure.
+- **Agency:** Explore scale, placement, and background treatments as monochrome hand-drawn roughs around the locked figure.
 
 Hard failures: lengthening the body, replacing the outfit with an unrelated professional role, removing an accessory, or changing the stance.
 
