@@ -28,6 +28,106 @@ When visual examples are needed to distinguish the period or the three modes, re
 
 When adapting the system to a person, pet, building, food, or product, read the matching section of [examples/subject-directions.md](examples/subject-directions.md). For detailed person, pet, or architecture cases, follow that file's link to the relevant example document; do not load unrelated case types.
 
+## Subject Preservation Protocol
+
+### Generation Preflight
+
+Complete this Generation Preflight before any creative transformation. Treat every recorded attribute as locked unless the user explicitly requests a change.
+
+### Subject count
+
+Record the exact number of:
+
+- people
+- animals
+- products
+- primary objects
+
+The output must preserve each count.
+
+### Identity lock
+
+For every person, record and preserve:
+
+- facial identity and defining features
+- hairstyle and apparent age
+- clothing structure
+- body proportions
+
+For animals, products, food, architecture, and other primary objects, record and preserve their distinguishing identity and structure.
+
+### Pose lock
+
+Record and preserve:
+
+- body pose and direction
+- gesture and action
+- hand placement
+- seated or standing state
+
+### Object lock
+
+Record and preserve:
+
+- held objects and their hand relationships
+- accessories
+- distinctive objects
+- supplied logos and labels
+- product construction and packaging structure
+
+Do not remove, replace, relocate, duplicate, or redesign a locked object.
+
+### Spatial lock
+
+Record and preserve:
+
+- left and right positions
+- front and back depth
+- distance and relative scale between subjects
+- overlap, contact, and occlusion relationships
+- the defining relationship between the subject and its environment
+
+Do not begin visual-style transformation until this preflight is complete. If a creative decision conflicts with a locked attribute, preservation wins.
+
+Use this preflight structure in the generation instructions:
+
+```text
+Subject count:
+Identity locks:
+Pose and gesture locks:
+Object locks:
+Spatial locks:
+Selected mode:
+Typography rule:
+Forbidden changes:
+```
+
+## Creative Boundary Protocol
+
+Creative additions may support the selected advertising mode, but must never replace, obscure, duplicate, or materially alter a locked subject, object, or relationship.
+
+Allowed additions include:
+
+- Madison Avenue-era advertising environments
+- commercial-illustration elements
+- editorial composition
+- lighting and material treatments
+- unbranded period-appropriate props and decorative elements
+
+Do not invent a brand, logo, endorsement, or product claim. Brand displays are allowed only when supplied by the user or already visible in the input.
+
+Forbidden changes include:
+
+- adding fictional advertising people, models, consumers, salespeople, family members, coworkers, background figures, or reflected figures
+- replacing or redesigning the uploaded subject
+- changing identity, subject count, pose, gesture, or subject relationships
+- swapping left and right positions or changing front and back order
+- covering a face or identity-defining feature with typography, products, props, or decoration
+- hiding or moving a held object
+- modifying a product, package, building, food item, or other locked structure
+
+For a people-based input, use only the people supplied by the user unless the user explicitly requests additional characters.
+
 ## Choose one mode
 
 - Default to **Premium Commercial Illustration** when the user simply asks for a Mad Men or vintage Madison Avenue treatment. Read [prompts/premium.md](prompts/premium.md).
@@ -36,13 +136,21 @@ When adapting the system to a person, pet, building, food, or product, read the 
 
 Do not invent a fourth mode. Generate one mode per request unless the user explicitly asks for all three. Do not combine modes into a triptych or comparison sheet by default.
 
+The three mode names and roles are fixed:
+
+1. **Premium Commercial Illustration** — 精致商业插画
+2. **Editorial Commercial Illustration** — 编辑式商业插画
+3. **Advertising Agency Concept Board** — 广告公司提案板
+
+Do not introduce Advertising Photography, rename Editorial mode as photography, or add another output mode.
+
 ## Context isolation
 
 Use only the subject and requirements in the current request. Do not carry over people, products, backgrounds, props, or creative directions from earlier examples unless the user explicitly asks to continue them.
 
 ## Preflight and review
 
-Before generation, determine the subject type and mode, then explicitly preserve the subject count, identity, pose, and defining structure in the image instructions.
+Before generation, complete the Subject Preservation Protocol, select one mode, and include the resulting locks in the image instructions.
 
 After generation, check:
 
