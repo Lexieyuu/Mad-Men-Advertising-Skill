@@ -14,10 +14,13 @@ Visual direction:
 
 - period art-director presentation
 - campaign exploration and layout studies
-- hand-drawn sketches and composition options
-- color studies, crop tests, and creative notes
+- entirely hand-drawn rough-work aesthetic
+- black-and-white pencil, charcoal, ink, or marker sketches
+- loose construction lines, unfinished edges, thumbnail compositions, crop tests, arrows, corrections, and creative notes
 - coherent internal presentation rather than a collage of finished ads
 
 Typography is expected. Use concise creative notes, art-direction labels, and concept descriptions. Do not invent brands, logos, endorsements, or unsupported product claims.
 
-The result must read as an internal advertising proposal document, not a finished advertisement.
+Default to monochrome. Do not include a fully colored hero image, polished rendering, colored presentation board, or color palette. Allow small color studies only when the user explicitly asks for color exploration.
+
+The result must read as an unfinished, hand-drawn internal advertising proposal document, not a finished advertisement decorated to resemble a process board.
