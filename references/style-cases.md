@@ -75,6 +75,7 @@ Use for:
 - the relationship between rough idea and finished communication
 - original layouts, scripts, correspondence, photography, and design development
 - concise presentation of one strong campaign idea
+- black-and-white, hand-drawn roughs as the default visual language for Agency mode
 
 Do not copy an Esquire cover, logo, slogan, celebrity concept, or finished campaign.
 
@@ -84,7 +85,7 @@ Do not copy an Esquire cover, logo, slogan, celebrity concept, or finished campa
 |---|---|---|---|
 | Premium | Klein and Galli | A polished, single-focus commercial artwork | Page layouts, notes, multiple scenes, typography |
 | Editorial | Mac Conner | A period magazine story built around the preserved subject | An isolated hero poster or extra characters |
-| Agency | George Lois archive | An internal idea-development presentation | A polished final advertisement with decorative fake process |
+| Agency | George Lois archive | A monochrome, hand-drawn internal idea-development presentation | A polished or colored final advertisement with decorative fake process |
 
 ## Shared period qualities
 
