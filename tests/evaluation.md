@@ -6,11 +6,14 @@ This file defines the evaluation rules and current validation scope for `v0.1.0-
 
 Retain one representative visual case:
 
-- **Case 01 — People ensemble:** eleven-person ensemble; completed and retained as the sole showcase case in [`examples/people/case-01-people-ensemble-premium.png`](../examples/people/case-01-people-ensemble-premium.png).
+- **Case 01 — People ensemble:** eleven-person ensemble; completed and retained as the sole showcase case, with the [original reference](../examples/people/case-01-people-ensemble-original.jpeg) and three fixed-mode outputs:
+  - [Premium Commercial Illustration](../examples/people/case-01-people-ensemble-premium.png)
+  - [Editorial Commercial Illustration](../examples/people/case-01-people-ensemble-editorial.png)
+  - [Advertising Agency Concept Board](../examples/people/case-01-people-ensemble-agency-concept.png)
 
 No additional person, pet, architecture, product, or food case is required for this beta draft. Those subject types remain supported directions in the Skill instructions, but they have not been validated by retained case images.
 
-Case 01 demonstrates the intended visual system; it does not prove stable performance across every supported subject category. Describe `v0.1.0-beta` as an experimental beta with limited validation.
+Case 01 demonstrates the intended visual system across all three fixed modes; it does not prove stable performance across every supported subject category. Describe `v0.1.0-beta` as an experimental beta with limited validation.
 
 ## Hard failures
 
@@ -75,14 +78,14 @@ The output also fails automatically if:
 
 ## Retained-case record
 
-Use this structure only when documenting the retained Case 01 result.
+Use this structure only when documenting the retained Case 01 results.
 
 ```markdown
 # Case 01 — People Ensemble
 
 ## Input
 
-Describe the input image and its subject count.
+Describe the original input image and its subject count.
 
 Current retained input count: 11 people.
 
@@ -119,7 +122,7 @@ Record the exact rule or prompt constraint used to correct the failure.
 
 ## Result
 
-Record the result after correction and note the before/after evidence.
+Record the result after correction for each fixed mode and note the original/output evidence.
 
 ## Decision
 
