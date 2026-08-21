@@ -31,15 +31,29 @@ The reference index includes museum and archive material for the visual foundati
 
 See [`references/style-cases.md`](references/style-cases.md). These are learning references, not assets to copy.
 
-They are not generated validation cases. The eleven-person people ensemble below is the only retained generated showcase.
+They are not generated validation cases. The eleven-person people ensemble below is the only retained generated showcase case.
 
 ## Showcase case
 
-### Case 01 — People Ensemble / Premium Commercial Illustration
+### Case 01 — People Ensemble / Three Fixed Modes
+
+#### Original reference
+
+![Original eleven-person ensemble reference](examples/people/case-01-people-ensemble-original.jpeg)
+
+#### Premium Commercial Illustration
 
 ![Eleven-person ensemble transformed into a premium mid-century commercial illustration](examples/people/case-01-people-ensemble-premium.png)
 
-This case preserves all eleven people and their group arrangement while converting the source into a finished, typography-free Madison Avenue commercial illustration. It is the sole generated example retained for this beta draft.
+#### Editorial Commercial Illustration
+
+![Eleven-person ensemble transformed into a mid-century editorial commercial illustration](examples/people/case-01-people-ensemble-editorial.png)
+
+#### Advertising Agency Concept Board
+
+![Eleven-person ensemble transformed into a black-and-white hand-drawn advertising agency concept board](examples/people/case-01-people-ensemble-agency-concept.png)
+
+This single case preserves all eleven people and their group arrangement across the three fixed modes. It provides a direct comparison between the original reference, a finished typography-free premium illustration, an editorial magazine treatment, and a monochrome hand-drawn agency concept board. Case 01 is the sole generated showcase case retained for this beta draft.
 
 ## Use the skill
 
@@ -75,7 +89,10 @@ Mad-Men-Advertising-Skill/
 │   ├── pet.md
 │   ├── architecture.md
 │   └── people/
-│       └── case-01-people-ensemble-premium.png
+│       ├── case-01-people-ensemble-original.jpeg
+│       ├── case-01-people-ensemble-premium.png
+│       ├── case-01-people-ensemble-editorial.png
+│       └── case-01-people-ensemble-agency-concept.png
 └── tests/
     └── evaluation.md
 ```
@@ -84,6 +101,6 @@ Mad-Men-Advertising-Skill/
 
 This repository is an early draft in the `v0.1.0-beta` limited-validation phase. Subject preservation runs as a required preflight before visual transformation, and creative additions cannot change locked subjects, objects, or relationships.
 
-The eleven-person people ensemble is the sole retained generated showcase. Person, pet, architecture, product, and food documents describe supported directions, but those categories have not been validated through additional case images. No further generated cases are planned for this beta draft.
+The eleven-person people ensemble is the sole retained generated showcase case, documented with its original reference and one output for each of the three fixed modes. Person, pet, architecture, product, and food documents describe supported directions, but those categories have not been validated through additional cases. No further generated cases are planned for this beta draft.
 
 This limited evidence supports an experimental beta, not a claim of stable performance across every subject category. There are currently no tags or published releases.
