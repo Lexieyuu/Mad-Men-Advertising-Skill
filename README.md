@@ -14,13 +14,15 @@ A visual-direction skill for transforming user-supplied people, pets, architectu
 
 ## Three modes
 
-1. **Premium Commercial Illustration** — finished advertising artwork with no typography.
-2. **Editorial Commercial Illustration** — a magazine-style story told through setting, props, light, and composition.
-3. **Advertising Agency Concept Board** — a black-and-white, hand-drawn internal creative-development presentation with rough sketches, construction lines, studies, and concise notes. Color appears only when explicitly requested.
+1. **Premium Commercial Illustration** — 精致商业插画；finished advertising artwork with no typography.
+2. **Editorial Commercial Illustration** — 编辑式商业插画；a magazine-style story told through setting, props, light, and composition.
+3. **Advertising Agency Concept Board** — 广告公司提案板；a black-and-white, hand-drawn internal creative-development presentation with rough sketches, construction lines, studies, and concise notes. Color appears only when explicitly requested.
 
-## Curated style cases
+These names and roles are fixed. The Skill does not include Advertising Photography or a fourth mode.
 
-The reference index includes museum and archive examples for the visual foundation and each mode:
+## Curated style references
+
+The reference index includes museum and archive material for the visual foundation and each mode:
 
 - David Klein — bold Jet Age commercial composition
 - Stan Galli — direct, resolved premium commercial illustration
@@ -28,6 +30,16 @@ The reference index includes museum and archive examples for the visual foundati
 - George Lois archive — concept-first agency development
 
 See [`references/style-cases.md`](references/style-cases.md). These are learning references, not assets to copy.
+
+They are not generated validation cases. The eleven-person people ensemble below is the only retained generated showcase.
+
+## Showcase case
+
+### Case 01 — People Ensemble / Premium Commercial Illustration
+
+![Eleven-person ensemble transformed into a premium mid-century commercial illustration](examples/people/case-01-people-ensemble-premium.png)
+
+This case preserves all eleven people and their group arrangement while converting the source into a finished, typography-free Madison Avenue commercial illustration. It is the sole generated example retained for this beta draft.
 
 ## Use the skill
 
@@ -61,11 +73,17 @@ Mad-Men-Advertising-Skill/
 │   ├── subject-directions.md
 │   ├── person.md
 │   ├── pet.md
-│   └── architecture.md
+│   ├── architecture.md
+│   └── people/
+│       └── case-01-people-ensemble-premium.png
 └── tests/
     └── evaluation.md
 ```
 
 ## Status
 
-This repository is an early draft for testing and iteration. There are currently no tags or published releases.
+This repository is an early draft in the `v0.1.0-beta` limited-validation phase. Subject preservation runs as a required preflight before visual transformation, and creative additions cannot change locked subjects, objects, or relationships.
+
+The eleven-person people ensemble is the sole retained generated showcase. Person, pet, architecture, product, and food documents describe supported directions, but those categories have not been validated through additional case images. No further generated cases are planned for this beta draft.
+
+This limited evidence supports an experimental beta, not a claim of stable performance across every subject category. There are currently no tags or published releases.

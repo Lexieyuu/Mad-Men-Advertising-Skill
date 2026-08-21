@@ -1,6 +1,16 @@
 # Evaluation
 
-Test each mode first with one person, then with a product, food item, building, and pet. Score each test from 1 to 5 and require at least 4 for acceptance.
+This file defines the evaluation rules and current validation scope for `v0.1.0-beta`. Score the retained showcase from 1 to 5 and require at least 4 for acceptance, while treating every hard failure as an automatic regeneration.
+
+## Current validation scope
+
+Retain one representative visual case:
+
+- **Case 01 — People ensemble:** eleven-person ensemble; completed and retained as the sole showcase case in [`examples/people/case-01-people-ensemble-premium.png`](../examples/people/case-01-people-ensemble-premium.png).
+
+No additional person, pet, architecture, product, or food case is required for this beta draft. Those subject types remain supported directions in the Skill instructions, but they have not been validated by retained case images.
+
+Case 01 demonstrates the intended visual system; it does not prove stable performance across every supported subject category. Describe `v0.1.0-beta` as an experimental beta with limited validation.
 
 ## Hard failures
 
@@ -16,6 +26,21 @@ Regenerate if any of these occur:
 - Agency mode contains a colored or polished hero image when color exploration was not explicitly requested
 - the output looks like modern AI art or only a vintage photo filter
 - unrelated content from a previous request appears
+
+## Subject-preservation hard failures
+
+The output also fails automatically if:
+
+- subject count changes
+- either identity in a multi-person image is replaced, blended, or swapped
+- left and right placement or front and back depth changes
+- a held object disappears, changes hands, or moves to another subject
+- an accessory is removed or replaced
+- pose, gesture, or interaction meaning changes
+- a new advertising character, background figure, or reflected figure appears
+- typography, a product, a prop, or decoration obscures a face or identity-defining feature
+- a supplied logo is altered
+- an unsupported brand or logo is invented
 
 ## Mode checks
 
@@ -47,3 +72,56 @@ Regenerate if any of these occur:
 - **Food:** same food identity and defining preparation; appetizing commercial treatment without substitution.
 - **Architecture:** same building structure and defining geometry; not merely an aged-photo effect.
 - **Pet:** same species or breed, coat, markings, proportions, pose, and count; never add an owner by default.
+
+## Retained-case record
+
+Use this structure only when documenting the retained Case 01 result.
+
+```markdown
+# Case 01 — People Ensemble
+
+## Input
+
+Describe the input image and its subject count.
+
+Current retained input count: 11 people.
+
+## Expected Preservation
+
+Record the attributes that must remain unchanged:
+
+- subject count
+- identity
+- pose and gesture
+- held objects and accessories
+- spatial relationships
+- defining structure
+
+## Failure Type
+
+Record one or more:
+
+- identity drift
+- subject count error
+- pose mutation
+- object mutation
+- extra character
+- composition change
+- spatial relationship change
+- subject obstruction
+- structural change
+- typography violation
+- mode violation
+
+## Correction
+
+Record the exact rule or prompt constraint used to correct the failure.
+
+## Result
+
+Record the result after correction and note the before/after evidence.
+
+## Decision
+
+PASS / REGENERATE
+```
