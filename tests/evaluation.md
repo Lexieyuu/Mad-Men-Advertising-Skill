@@ -1,130 +1,83 @@
-# Evaluation
+# 三模式验收
 
-This file defines the evaluation rules and current validation scope for `v0.1.0-beta`. Score the retained showcase from 1 to 5 and require at least 4 for acceptance, while treating every hard failure as an automatic regeneration.
+本文件用于验收 `v0.9.0-beta`。三张输出必须在不看文件名和提示词的情况下，也能通过媒介、构图和传播角色区分。
 
-## Current validation scope
+## 运行时自包含硬门槛
 
-Retain one representative visual case:
+- 只加载 `SKILL.md` 时，必须已经包含三种模式的主体锁定、构图放开、媒介、文字和拒绝条件；
+- `SKILL.md` 不得依赖读取 `prompts/` 或 `references/` 才能决定如何生成；
+- 上传图只用于锁定主体事实，不得把原镜头、裁切、光线、背景和视觉重心误当成硬锁定。
 
-- **Case 01 — People ensemble:** eleven-person ensemble; completed and retained as the sole showcase case, with the [original reference](../examples/people/case-01-people-ensemble-original.jpeg) and three fixed-mode outputs:
-  - [Premium Commercial Illustration](../examples/people/case-01-people-ensemble-premium.png)
-  - [Editorial Commercial Illustration](../examples/people/case-01-people-ensemble-editorial.png)
-  - [Advertising Agency Concept Board](../examples/people/case-01-people-ensemble-agency-concept.png)
+## 一、主体保真硬门槛
 
-No additional person, pet, architecture, product, or food case is required for this beta draft. Those subject types remain supported directions in the Skill instructions, but they have not been validated by retained case images.
+任一项失败都需要重新生成：
 
-Case 01 demonstrates the intended visual system across all three fixed modes; it does not prove stable performance across every supported subject category. Describe `v0.1.0-beta` as an experimental beta with limited validation.
+- 人物数量、身份、面部结构、年龄感、发型、服装和姿势发生明显变化；
+- 人与人、人与物、人与空间的关键关系被改变；
+- 产品、动物、建筑或食物失去关键结构和可辨识特征；
+- 主体被合并、复制、交换或替换；
+- 出现原图没有的人物、动物、角色、品牌、logo、背书或无依据主张；
+- 局部裁切破坏了脸、关节、手与物体连接、产品结构、动物特征或建筑节点。
 
-## Hard failures
+## 二、模式验收
 
-Regenerate if any of these occur:
+### Premium / Bernie Fuchs
 
-- a person, pet, product, building, or food subject loses its identity
-- a person's face, pose, gesture, or body position changes materially
-- a product's form, package, label structure, or construction is redesigned
-- a pet's breed, coat, markings, or distinguishing features change
-- any unrequested person, animal, character, model, or duplicate subject appears
-- Premium mode contains any text
-- multiple modes are mixed without an explicit request
-- Agency mode contains a colored or polished hero image when color exploration was not explicitly requested
-- the output looks like modern AI art or only a vintage photo filter
-- unrelated content from a previous request appears
+- 一张完整、可交付的商业印刷插画；
+- 人物和物体具体可认，不能退化成单一英雄主体或抽象图标；
+- 用有限而有主次的印刷色块组织画面：一两块大色场建立基调，少量重点色服务叙事；
+- 脸部必须可辨识，但只能用轮廓、发型、比例、年龄线索和少量五官/明暗标记完成；不得出现高清皮肤、逐根头发、睫毛、牙齿、光滑皮肤反光或电影肖像式表情塑形；
+- 多人物、多道具或环境信息应具有不等的完成度：关键人物、手部关系和叙事道具更清楚，次要人物和背景允许退化为剪影、局部线条、色块或留白；
+- 前景、中景、背景关系可通过叠压、尺度、斜线、扁平空间和色场成立，不要求连续透视或全场景写实；
+- 边缘应有主次：关键节点可清楚，其他处允许断边、漏白、覆盖和不完整色层；不得满画面统一闭合、无瑕、矢量式精确；
+- 默认完全无文字、签名、页面装饰和提案结构；
+- 不能只是原照片换色、连续厚重笔触、统一脏褐色覆盖、全画面同等高清细节，也不能只剩抽象几何形状。
 
-## Subject-preservation hard failures
+### Editorial / Al Parker
 
-The output also fails automatically if:
+- 一张图文一体的杂志商业插画页；
+- 设计化但身份可读的人物、作为叙事线索的道具、非对称构图、开放留白、重叠或斜向动作共同形成页面阅读路线；
+- 画面可采用完整场景、白底人物构成或压缩空间，但不能固定套用 Premium 的完整场景；
+- 至少有标题、辅助句和 5–10 条短小、可读、正向、围绕画面的描述；
+- 文字与图像共同组织视觉路线，不是最后贴上的单行标题；
+- 主标题是有性格的手绘展示字；辅助句与短描述至少使用另一种书写体、斜体或手写印刷字，不得整页套用规矩的统一电脑字体；
+- 文字可以顺着人物、道具、曲线、斜线和页边流动，不应退化为机械左对齐的列表；
+- 不能是 Premium 同构图换色、写实场景加一句说明、长段假正文、统一无衬线排版或现代 UI 模板。
 
-- subject count changes
-- either identity in a multi-person image is replaced, blended, or swapped
-- left and right placement or front and back depth changes
-- a held object disappears, changes hands, or moves to another subject
-- an accessory is removed or replaced
-- pose, gesture, or interaction meaning changes
-- a new advertising character, background figure, or reflected figure appears
-- typography, a product, a prop, or decoration obscures a face or identity-defining feature
-- a supplied logo is altered
-- an unsupported brand or logo is invented
+### Agency / Austin Briggs
 
-## Mode checks
+- 一张黑白手绘开发稿；
+- 铅笔、炭笔、石版蜡笔、碳笔或墨线的线条主导画面；
+- 通过姿态、轮廓、排线、结构线和少量灰阶解决构图，而不是先做完整明暗或表面涂抹；
+- 有自然的线条压力变化、寻找线、重画线、擦除或未完成段落；
+- 可以有一个整体稿和有目的的局部重点，但不要求固定多格、网格或方案数量；
+- 局部重点必须服务于脸、手、动作、物体或空间结构的艺术指导决策，并保持结构完整；
+- 不能是黑白照片滤镜、彩色图加纸张效果或完美提案模板。
 
-### Premium
+## 三、模式区分
 
-- one clear hero subject
-- clean, elegant, finished commercial artwork
-- no typography of any kind
+把三张图去掉文件名和提示词后并排观察：
 
-### Editorial
+- Premium 首先应被读成“完成的印刷商业插画”；
+- Editorial 首先应被读成“杂志里的图文故事页”；
+- Agency 首先应被读成“插画师正在解决问题的黑白工作稿”。
 
-- magazine-story atmosphere
-- narrative comes from setting, props, light, and space
-- optional typography is concise and period-appropriate
-- no additional people or characters are used to manufacture story
+如果 Premium 与 Editorial 只能靠色彩区分，判定失败；如果 Agency 只能靠黑白滤镜区分，判定失败。
 
-### Agency
+## 评分记录
 
-- visibly exploratory rather than final
-- entirely hand-drawn in black-and-white pencil, charcoal, ink, or marker by default
-- includes unfinished lines, thumbnails, layout or crop studies, arrows, corrections, and concise creative notes
-- contains no colored or polished hero image; limited color studies appear only when explicitly requested
-- contains no invented brand, logo, endorsement, or unsupported claim
+```text
+输入类型：
+模式：
 
-## Subject matrix
+主体保真：1–5
+模式完成度：1–5
+风格辨识度：1–5
+构图自然度：1–5
+文字控制：1–5
 
-- **Person:** same identity, face, hairstyle, apparent age, pose, gesture, and count.
-- **Product:** same silhouette, packaging, construction, proportions, and recognizable identity.
-- **Food:** same food identity and defining preparation; appetizing commercial treatment without substitution.
-- **Architecture:** same building structure and defining geometry; not merely an aged-photo effect.
-- **Pet:** same species or breed, coat, markings, proportions, pose, and count; never add an owner by default.
-
-## Retained-case record
-
-Use this structure only when documenting the retained Case 01 results.
-
-```markdown
-# Case 01 — People Ensemble
-
-## Input
-
-Describe the original input image and its subject count.
-
-Current retained input count: 11 people.
-
-## Expected Preservation
-
-Record the attributes that must remain unchanged:
-
-- subject count
-- identity
-- pose and gesture
-- held objects and accessories
-- spatial relationships
-- defining structure
-
-## Failure Type
-
-Record one or more:
-
-- identity drift
-- subject count error
-- pose mutation
-- object mutation
-- extra character
-- composition change
-- spatial relationship change
-- subject obstruction
-- structural change
-- typography violation
-- mode violation
-
-## Correction
-
-Record the exact rule or prompt constraint used to correct the failure.
-
-## Result
-
-Record the result after correction for each fixed mode and note the original/output evidence.
-
-## Decision
-
-PASS / REGENERATE
+硬失败：
+问题：
+修正：
+结论：PASS / REGENERATE
 ```

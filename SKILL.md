@@ -1,175 +1,147 @@
 ---
 name: mad-men-advertising
-description: Transform user-supplied people, pets, architecture, food, or products into 1950s–1960s Madison Avenue commercial art while preserving the subject. Use for Mad Men-era premium advertisements, magazine-editorial illustrations, and advertising-agency concept boards.
+description: "Transform an uploaded photo into one of three distinct mid-century commercial illustration modes: Bernie Fuchs premium illustration, Al Parker editorial page, or Austin Briggs black-and-white development drawing. Use when the user asks for Mad Men-era advertising illustration while retaining the real subject."
 ---
 
 # Mad Men Advertising
 
-Create commercial artwork rooted in the 1950s–1960s Madison Avenue advertising era. Treat the uploaded image as the source of subject identity and structure, not as the source of visual style.
+This file is the complete runtime instruction set. Do not depend on linked prompt files or reference files to decide how to generate. The uploaded image supplies subject facts; this skill supplies the visual language.
 
-## Non-negotiable priorities
+## Output contract
 
-Apply these in order:
+Generate exactly one selected mode per image. If the user asks for all three, make three independent images, never a triptych or comparison sheet.
 
-1. Preserve the exact subject and its identity.
-2. Preserve the number of subjects.
-3. Preserve the original pose, gesture, and structure.
-4. Apply the Mad Men-era visual language in [references/mad-men-visual.md](references/mad-men-visual.md).
-5. Use exactly one output mode.
-6. Add advertising expression without violating the earlier constraints.
+The three fixed modes are:
 
-For people, keep the same face, features, hairstyle, apparent age, pose, and body position. Do not replace the person with a model or beautify them into a different identity.
+1. **Premium Commercial Illustration / 精致商业插画** — Bernie Fuchs direction; finished color commercial illustration; no text by default.
+2. **Editorial Commercial Illustration / 编辑式商业插画** — Al Parker direction; illustrated magazine page; typography is required by default.
+3. **Advertising Agency Concept Board / 广告公司提案稿** — Austin Briggs direction; black-and-white hand-drawn advertising development page.
 
-For products and objects, keep the form, packaging, construction, and recognizable identity. For pets, preserve breed, coat, markings, and distinguishing features.
+Do not create a fourth mode and do not blend modes.
 
-Never add people, animals, or characters unless the user explicitly requests them. Build narrative through environment, props, lighting, and composition instead.
+## Before generating: separate facts from the photograph
 
-When visual examples are needed to distinguish the period or the three modes, read [references/style-cases.md](references/style-cases.md). Learn only visual logic; do not copy subjects, brands, wording, or exact layouts.
+Extract and lock only these facts from the uploaded image:
 
-When adapting the system to a person, pet, building, food, or product, read the matching section of [examples/subject-directions.md](examples/subject-directions.md). For detailed person, pet, or architecture cases, follow that file's link to the relevant example document; do not load unrelated case types.
+- exact number of people, animals, products and primary objects;
+- each person’s recognizable face, apparent age, hairstyle, clothing, body proportion, pose, gesture and hand action;
+- the identity and functional structure of products, animals, food and architecture;
+- key person-to-person, person-to-object and object-to-space relationships.
 
-## Subject Preservation Protocol
+Do **not** lock the original camera angle, crop, full background detail, lighting, color grading, negative space or visual hierarchy. The result must not be the same photograph painted over. Rebuild those choices in the selected mode.
 
-### Generation Preflight
+Never add, remove, duplicate, merge, replace or beautify people. Never add animals, brands, logos, signatures, endorsements, prices or unsupported product claims. If the source contains readable brand text, retain it only when the chosen mode explicitly allows source text; otherwise convert it to unreadable graphic detail.
 
-Complete this Generation Preflight before any creative transformation. Treat every recorded attribute as locked unless the user explicitly requests a change.
+Cropping is allowed only when the remaining face, body, hand-object connection, product structure, animal feature or architectural node stays complete and readable. Do not crop through faces, joints, hands holding objects or essential structural connections.
 
-### Subject count
+## Generation order
 
-Record the exact number of:
+1. Write the subject locks from the source image.
+2. Select one mode.
+3. Replace the photograph’s composition, surface and reading order with that mode’s module below.
+4. Generate the image.
+5. Reject and regenerate if it reads first as a movie still, a photo filter, generic AI oil painting, or the wrong mode.
 
-- people
-- animals
-- products
-- primary objects
+## 1. Premium Commercial Illustration / 精致商业插画
 
-The output must preserve each count.
+### Role
 
-### Identity lock
+Create a finished commercial or story illustration in the Bernie Fuchs direction. The first impression is a resolved mid-century printed illustration with clear graphic organization, not a cinematic scene and not an oil painting.
 
-For every person, record and preserve:
+### Required visual construction
 
-- facial identity and defining features
-- hairstyle and apparent age
-- clothing structure
-- body proportions
+- Recompose the source as a complete story scene: keep the important people, props and environment, but create a new commercial visual hierarchy instead of tracing the source camera view. A scene may be spatially compressed, selectively cropped or joined by large color fields; it does not need continuous cinematic perspective.
+- Use opaque color fields and selective ink contours as the main structure. Major background planes, garments, pavement and architecture should read as deliberately simplified print shapes, not continuously modelled photographic surfaces.
+- Use a controlled, limited print palette. Let one or two large color fields establish the scene, then use a few decisive accents; warm yellow, red, blue, green, brown and black may be used when they serve the story. Avoid a uniformly detailed rainbow of local color, a muddy brown wash or sepia filtering.
+- Preserve a person's likeness through their silhouette, hairline, face proportion, age cues, clothing and a few decisive facial marks. Faces must be recognizable but **low in descriptive resolution**: use simplified planes of light and shadow and sparse eye, nose and mouth marks; do not render pores, eyelashes, individual hair strands, glossy skin, detailed teeth or photographic expression modelling. The result must not be blurry—only selectively described.
+- Use an explicit hierarchy of finish. The primary face, hand-to-object connection and story-bearing props get the clearest marks; secondary people, distant faces, background objects and architectural detail may collapse into silhouettes, partial contours, color shapes or open paper. Never give every figure and object the same polished level of detail.
+- Build readable foreground, middle ground and background through overlap, scale, flattened depth, diagonals and color fields rather than through fully rendered perspective, photographic focus falloff or uniform environmental detail.
+- Vary edge treatment deliberately: firm contours at important identity and action nodes; broken, omitted or partly overpainted edges elsewhere; occasional dry opaque coverage and visible paper at transitions are welcome. The medium is printed ink-and-opaque-gouache/casein illustration, not a pristine vector render: no thick oil bristles, wet paint, canvas weave, impasto, soft digital airbrushing or aged-photo filtering.
 
-For animals, products, food, architecture, and other primary objects, record and preserve their distinguishing identity and structure.
+### Hard output rules
 
-### Pose lock
+- One finished image only.
+- No readable text, title, caption, signature, watermark, logo, border, label or decorative lettering.
+- If the source includes a newspaper, sign or package text, render it as unreadable graphic print texture.
 
-Record and preserve:
+### Reject if
 
-- body pose and direction
-- gesture and action
-- hand placement
-- seated or standing state
+- it is a photorealistic movie still, photo colorization, any visible oil-paint/canvas/bristle texture, soft blended digital painting or a brown wash;
+- it has high-definition, fully modelled photographic faces, equally polished background detail, uniformly closed outlines or sterile vector-like edge precision;
+- it reduces a multi-person or multi-prop scene to an empty hero poster;
+- it looks like an Editorial page, Agency sketch, grid or proposal board.
 
-### Object lock
+## 2. Editorial Commercial Illustration / 编辑式商业插画
 
-Record and preserve:
+### Role
 
-- held objects and their hand relationships
-- accessories
-- distinctive objects
-- supplied logos and labels
-- product construction and packaging structure
+Create a finished Al Parker direction magazine cover, illustrated feature page or commercial story page. The first impression must be an intentionally designed image-and-type page, not a Premium illustration with one headline pasted onto it.
 
-Do not remove, replace, relocate, duplicate, or redesign a locked object.
+### Required visual construction
 
-### Spatial lock
+- Recompose around a magazine reading route. Use asymmetric placement, open cream or white space, selective crop, overlap, diagonal movement and decorative line accents.
+- Design the figures into expressive, readable illustrated forms: crisp ink-like contours, flat opaque color shapes, selective clothing patterns and bold accent colors. Preserve identity, but do not preserve the source’s photographic lighting or camera framing.
+- Use clothing, shoes, hands, tools, furniture, products and architectural fragments as story devices. Space may be compressed, partially abstracted or interrupted by white space; it does not need full cinematic perspective.
+- The image must have obvious editorial rhythm: unequal visual weights, purposeful empty space and text placed along movement, props and page edges.
+- Typography is part of the illustration, not a clean software layout: use custom hand-drawn display lettering, show-card lettering, expressive serif forms, casual script or condensed hand-lettered print as the page needs. Let letters vary in scale, baseline, stroke and placement while remaining readable.
 
-Record and preserve:
+### Typography rules
 
-- left and right positions
-- front and back depth
-- distance and relative scale between subjects
-- overlap, contact, and occlusion relationships
-- the defining relationship between the subject and its environment
+Typography is required by default. Use one readable main title, one short supporting line and **five to ten** short, positive, scene-specific descriptions. The text should describe only visible actions, objects, environments, care, craft, energy or experience.
 
-Do not begin visual-style transformation until this preflight is complete. If a creative decision conflicts with a locked attribute, preservation wins.
+- The main title must be bespoke display lettering, not a default computer font. Give it a visible hand-drawn character: expressive serif, brush-like, show-card, calligraphic or playful letterforms selected to match the scene.
+- Use two or three complementary lettering voices across the page: for example a large display title, a more intimate script or italic supporting line, and small hand-lettered print for short descriptions. Do not use one uniform font family everywhere.
+- Keep phrases short and readable; distribute them along curves, diagonals, props, figure movement and page edges instead of setting them in a rigid left-aligned list. Slightly irregular baselines, spacing and printed imperfections are welcome when they serve the composition.
+- Do not cover identity-defining faces, hands, shoes, product forms or key actions.
+- Do not invent brands, clients, prices, guarantees, endorsements, technical claims or fake article body copy.
+- If legible typography cannot be achieved, regenerate; do not silently collapse the mode into a textless Premium image.
 
-Use this preflight structure in the generation instructions:
+### Hard output rules
 
-```text
-Subject count:
-Identity locks:
-Pose and gesture locks:
-Object locks:
-Spatial locks:
-Selected mode:
-Typography rule:
-Forbidden changes:
-```
+- One complete illustrated editorial page.
+- Text must be part of the composition, not a single footer or a UI card.
 
-## Creative Boundary Protocol
+### Reject if
 
-Creative additions may support the selected advertising mode, but must never replace, obscure, duplicate, or materially alter a locked subject, object, or relationship.
+- it keeps the source as a realistic scene and merely adds a title;
+- it has only one or two text elements, long fake newspaper columns, generic sans-serif typesetting, a mechanically aligned text list, modern dashboard cards or a rigid template;
+- it looks like a Premium scene with recolored paint, an Agency sketch or a photo filter.
 
-Allowed additions include:
+## 3. Advertising Agency Concept Board / 广告公司提案稿
 
-- Madison Avenue-era advertising environments
-- commercial-illustration elements
-- editorial composition
-- lighting and material treatments
-- unbranded period-appropriate props and decorative elements
+### Role
 
-Do not invent a brand, logo, endorsement, or product claim. Brand displays are allowed only when supplied by the user or already visible in the input.
+Create an Austin Briggs direction black-and-white illustration development drawing. The first impression is an illustrator solving gesture, proportion, perspective and composition on paper; it is not a finished advertisement and not a faux-vintage presentation board.
 
-Forbidden changes include:
+### Required visual construction
 
-- adding fictional advertising people, models, consumers, salespeople, family members, coworkers, background figures, or reflected figures
-- replacing or redesigning the uploaded subject
-- changing identity, subject count, pose, gesture, or subject relationships
-- swapping left and right positions or changing front and back order
-- covering a face or identity-defining feature with typography, products, props, or decoration
-- hiding or moving a held object
-- modifying a product, package, building, food item, or other locked structure
+- Work in black graphite, charcoal, lithographic crayon and/or ink on predominantly white paper. No color.
+- Make contour, gesture, proportion, perspective and structural relationships primary. Use varied line pressure: light searching lines, darker committed contours, selective crosshatching, occasional rubbed gray masses and open unfinished areas.
+- Show credible working process through overdrawn corrections, erased passages, broken edges and unresolved construction lines. These marks must clarify an actual pose, object, light or spatial decision; never use random scribbles or a uniform gray filter.
+- Draw one dominant overall composition containing the full source situation. It may include one or two irregular, subordinate detail studies of a real difficult relationship—for example hand-to-object, foot-to-shoe, face-to-hat or a structural junction.
+- Detail studies must be loose, unequal and integrated into the page; never arrange a perfect grid, comic panels, equal thumbnails, cards, labels or a template.
+- Keep natural observed body language. Do not turn subjects into heroic advertising poses.
 
-For a people-based input, use only the people supplied by the user unless the user explicitly requests additional characters.
+### Hard output rules
 
-## Choose one mode
+- Strictly monochrome black, charcoal gray and white paper.
+- No title, slogan, readable annotation, signature, logo, tape, sticker, UI panel or decorative presentation furniture.
+- White paper and unfinished areas must remain visibly present.
 
-- Default to **Premium Commercial Illustration** when the user simply asks for a Mad Men or vintage Madison Avenue treatment. Read [prompts/premium.md](prompts/premium.md).
-- Use **Editorial Commercial Illustration** when the user asks for a magazine, editorial, lifestyle, or story-page treatment. Read [prompts/editorial.md](prompts/editorial.md).
-- Use **Advertising Agency Concept Board** when the user asks for a proposal, campaign direction, internal presentation, or agency concept. Read [prompts/agency.md](prompts/agency.md).
+### Reject if
 
-Do not invent a fourth mode. Generate one mode per request unless the user explicitly asks for all three. Do not combine modes into a triptych or comparison sheet by default.
+- it is a color illustration converted to grayscale, a black-and-white photograph, a polished digital line drawing or a heavily shaded graphite painting;
+- it is a perfect concept-board grid, collage or labelled presentation;
+- the crop breaks facial identity, hand-object contact, shoe structure or another essential relationship.
 
-The three mode names and roles are fixed:
+## Final visual QA
 
-1. **Premium Commercial Illustration** — 精致商业插画
-2. **Editorial Commercial Illustration** — 编辑式商业插画
-3. **Advertising Agency Concept Board** — 广告公司提案板
+Before returning an image, answer all of these:
 
-Do not introduce Advertising Photography, rename Editorial mode as photography, or add another output mode.
+- Are the subject count, identity, pose and key relations still correct?
+- Does Premium have no readable text and obvious opaque print-color construction?
+- Does Editorial have a designed image-and-type reading route with one title, one support line and five to ten positive short descriptions?
+- Does Agency have white paper, varied hand-drawn lines, real construction/revision marks and no color or template grid?
+- If file names were removed, would a viewer identify the three outputs by role rather than merely by palette?
 
-## Context isolation
-
-Use only the subject and requirements in the current request. Do not carry over people, products, backgrounds, props, or creative directions from earlier examples unless the user explicitly asks to continue them.
-
-## Preflight and review
-
-Before generation, complete the Subject Preservation Protocol, select one mode, and include the resulting locks in the image instructions.
-
-After generation, check:
-
-- The result clearly reads as 1950s–1960s Madison Avenue commercial art rather than a modern AI illustration or a photo with a vintage filter.
-- The subject, identity, pose, structure, and count are unchanged.
-- No unrelated subject has been added.
-- Premium mode contains no typography.
-- Editorial mode tells its story through setting and composition.
-- Agency mode is a monochrome, hand-drawn internal creative-development board made from rough pencil, charcoal, ink, or marker studies—not a finished advertisement.
-- No material from an unrelated previous request appears.
-
-Treat any identity change, pose change, added person, Premium typography, mixed modes, modern AI styling, simple photo filtering, or product redesign as a failed output. Use [tests/evaluation.md](tests/evaluation.md) for broader validation.
-
-## Correct failures narrowly
-
-- If identity drifts, strengthen identity preservation without adding more retro styling.
-- If the pose changes, strengthen pose lock.
-- If extra subjects appear, strengthen subject-count lock.
-- If Premium contains text, strengthen the no-typography constraint.
-- If Agency contains a colored or polished hero image, remove the color and finish; restore rough black-and-white hand-drawn studies. Permit limited color only when the user explicitly requests color exploration.
-- If the result looks like a filtered photograph, strengthen hand-painted commercial illustration and printed-paper qualities.
-- If the composition is busy, simplify the composition without deleting or altering the subject.
+If any answer is no, correct only that selected mode and regenerate. Do not import visual devices from one mode into another.
