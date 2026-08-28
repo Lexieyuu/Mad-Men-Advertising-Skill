@@ -15,7 +15,7 @@ The three fixed modes are:
 
 1. **Premium Commercial Illustration / 精致商业插画** — Bernie Fuchs direction; finished color commercial illustration; no text by default.
 2. **Editorial Commercial Illustration / 编辑式商业插画** — Al Parker direction; illustrated magazine page; typography is required by default.
-3. **Advertising Agency Concept Board / 广告公司提案稿** — Austin Briggs direction; black-and-white hand-drawn advertising development page.
+3. **Advertising Agency Concept Board / 广告公司提案稿** — Austin Briggs direction; black-and-white, step-by-step advertising development board.
 
 Do not create a fourth mode and do not blend modes.
 
@@ -111,27 +111,32 @@ Typography is required by default. Use one readable main title, one short suppor
 
 ### Role
 
-Create an Austin Briggs direction black-and-white illustration development drawing. The first impression is an illustrator solving gesture, proportion, perspective and composition on paper; it is not a finished advertisement and not a faux-vintage presentation board.
+Create an Austin Briggs direction black-and-white, step-by-step illustration development board. The first impression is an illustrator showing how a composition is being solved on paper: one dominant working drawing surrounded by unequal studies for grouping, layout, value and light. It should feel like an authentic agency art-direction process page, not a finished advertisement, a comic strip or a polished faux-vintage presentation board.
 
 ### Required visual construction
 
-- Work in black graphite, charcoal, lithographic crayon and/or ink on predominantly white paper. No color.
+- Work in black graphite, charcoal, lithographic crayon and/or ink on warm white or cream paper. No color accents or colored washes.
 - Make contour, gesture, proportion, perspective and structural relationships primary. Use varied line pressure: light searching lines, darker committed contours, selective crosshatching, occasional rubbed gray masses and open unfinished areas.
 - Show credible working process through overdrawn corrections, erased passages, broken edges and unresolved construction lines. These marks must clarify an actual pose, object, light or spatial decision; never use random scribbles or a uniform gray filter.
-- Draw one dominant overall composition containing the full source situation. It may include one or two irregular, subordinate detail studies of a real difficult relationship—for example hand-to-object, foot-to-shoe, face-to-hat or a structural junction.
-- Detail studies must be loose, unequal and integrated into the page; never arrange a perfect grid, comic panels, equal thumbnails, cards, labels or a template.
+- Build a clear step sequence on one sheet: a large central or slightly off-center overall composition containing the full source situation, plus several smaller studies that visibly test real decisions such as **GROUP STUDY**, **LAYOUT**, **VALUE** and **LIGHT**. These labels are optional, short, hand-written art-direction notes—not slogans, brands or body copy.
+- Use 4–7 subordinate studies with unequal scale and finish: rough grouping thumbnails, alternate layout crops, a value mass test, a light/shadow test, and when useful a hand-to-object, foot-to-shoe, face-to-hat or structural-junction study. Each study must derive from the source and support a specific visual decision.
+- Arrange studies organically around the main drawing with arrows, crop marks, loose registration lines, taped paper scraps or lightly pinned-looking paper edges. Keep generous paper visible. Never use a perfect grid, equal thumbnails, cards, UI panels or a clean presentation template.
+- Make the step order readable through visual progression: exploratory small sketches first, a more resolved central composition next, and focused value/light refinements around it. Do not make every study equally finished.
 - Keep natural observed body language. Do not turn subjects into heroic advertising poses.
 
 ### Hard output rules
 
 - Strictly monochrome black, charcoal gray and white paper.
-- No title, slogan, readable annotation, signature, logo, tape, sticker, UI panel or decorative presentation furniture.
-- White paper and unfinished areas must remain visibly present.
+- No slogan, brand, logo, signature, watermark, price, endorsement, fake copy or decorative presentation furniture.
+- Short functional handwritten labels such as **GROUP STUDY**, **LAYOUT**, **VALUE**, **LIGHT**, **CROP** or **POSE** are allowed when they identify a real study. Keep them sparse, legible, imperfect and subordinate to the drawings; do not add paragraphs or invented client language.
+- Tape, paper scraps, arrows and crop marks are allowed only as believable process evidence, never as decorative stickers or a rigid scrapbook collage.
+- Warm white/cream paper and unfinished areas must remain visibly present; the output must remain strictly monochrome apart from the paper tone.
 
 ### Reject if
 
 - it is a color illustration converted to grayscale, a black-and-white photograph, a polished digital line drawing or a heavily shaded graphite painting;
-- it is a perfect concept-board grid, collage or labelled presentation;
+- it is a perfect concept-board grid, scrapbook collage, UI-like layout or a polished labelled presentation;
+- it has only one finished drawing with decorative notes, instead of a readable progression from rough studies to a resolved central composition;
 - the crop breaks facial identity, hand-object contact, shoe structure or another essential relationship.
 
 ## Final visual QA
@@ -141,7 +146,7 @@ Before returning an image, answer all of these:
 - Are the subject count, identity, pose and key relations still correct?
 - Does Premium have no readable text and obvious opaque print-color construction?
 - Does Editorial have a designed image-and-type reading route with one title, one support line and five to ten positive short descriptions?
-- Does Agency have white paper, varied hand-drawn lines, real construction/revision marks and no color or template grid?
+- Does Agency have warm white paper, varied hand-drawn lines, a readable progression of group/layout/value/light studies, real construction/revision marks and no color or template grid?
 - If file names were removed, would a viewer identify the three outputs by role rather than merely by palette?
 
 If any answer is no, correct only that selected mode and regenerate. Do not import visual devices from one mode into another.

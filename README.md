@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | **Premium Commercial Illustration / 精致商业插画** | Bernie Fuchs 方向的完成商业插画：印刷色场、选择性细节和完整场景叙事。 | 无文字 |
 | **Editorial Commercial Illustration / 编辑式商业插画** | Al Parker 方向的杂志图文页：人物、道具、留白和手绘英文文字共同组织阅读路线。 | 带标题、辅助句和多条正向短描述 |
-| **Advertising Agency Concept Board / 广告公司提案稿** | Austin Briggs 方向的黑白插画开发稿：线条、姿态、结构与构图推敲优先。 | 无文字 |
+| **Advertising Agency Concept Board / 广告公司提案稿** | Austin Briggs 方向的步骤式黑白插画提案板：以主构图为中心，展示 Group Study、Layout、Value、Light 等构图推敲步骤。 | 仅允许简短的功能性手写标签 |
 
 ## 使用边界
 
@@ -18,7 +18,7 @@
 - 保持人物、动物、产品或建筑的身份、数量、姿势、关键物体和关系；
 - 不自动新增人物、动物、角色、品牌或无依据主张；
 - 每次只生成一种模式；三种模式固定，不混合，也不扩展第四种；
-- 成图必须是重新组织的商业插画或手绘开发稿，而不是复古滤镜。
+- 成图必须是重新组织的商业插画或步骤式手绘开发稿，而不是复古滤镜。
 
 ## 使用
 
