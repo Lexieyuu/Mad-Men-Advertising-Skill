@@ -44,15 +44,15 @@
 
 ### Premium Commercial Illustration / 精致商业插画
 
-![精致商业插画案例](examples/restaurant-smoker/premium-commercial-illustration.png)
+![精致商业插画案例](examples/restaurant-smoker/premium-commercial-illustration-v2.png)
 
 ### Editorial Commercial Illustration / 编辑式商业插画
 
-![编辑式商业插画案例](examples/restaurant-smoker/editorial-commercial-illustration.png)
+![编辑式商业插画案例](examples/restaurant-smoker/editorial-commercial-illustration-v2.png)
 
 ### Advertising Agency Concept Board / 广告公司提案稿
 
-![广告公司提案稿案例](examples/restaurant-smoker/advertising-agency-concept-board.png)
+![广告公司提案稿案例](examples/restaurant-smoker/advertising-agency-concept-board-v2.png)
 
 ## 工程结构
 
@@ -64,9 +64,9 @@ Mad-Men-Advertising-Skill/
 ├── examples/                                     # 可直接查看的生成效果示例
 │   └── restaurant-smoker/                        # 同一原图的三模式展示案例
 │       ├── original-reference.png                # 原始人物照片
-│       ├── premium-commercial-illustration.png   # 精致商业插画输出
-│       ├── editorial-commercial-illustration.png # 编辑式商业插画输出
-│       └── advertising-agency-concept-board.png  # 广告公司提案稿输出
+│       ├── premium-commercial-illustration-v2.png   # 精致商业插画输出
+│       ├── editorial-commercial-illustration-v2.png # 编辑式商业插画输出
+│       └── advertising-agency-concept-board-v2.png  # 广告公司提案稿输出
 ├── references/
 │   └── sources.md                                # 研究出处索引；不参与运行
 └── tests/
