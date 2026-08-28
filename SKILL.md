@@ -11,7 +11,7 @@ This file is the complete runtime instruction set. Do not depend on linked promp
 
 Generate exactly one selected mode per image. If the user asks for all three, make three independent images, never a triptych or comparison sheet.
 
-Match the generated image's canvas to the uploaded source image's dimensions: use the exact same pixel width and height whenever the image tool supports custom dimensions. Preserve the source orientation and aspect ratio. If the tool only offers preset sizes, choose the preset with the closest aspect ratio, never stretch the image, and resize the final result back to the source width and height without cropping away identity-defining or relationship-defining content.
+Match the generated image to the uploaded source image's exact pixel width and height whenever the image tool supports custom dimensions. The artwork itself must fill that canvas: do not add an outer background, letterbox, pillarbox, border, blank margin or solid-color extension merely to reach the target dimensions. Preserve the source orientation. If the tool only offers preset sizes or a different aspect ratio, recompose the artwork inside the target frame and use a deliberate, safe crop or scene extension within the artwork; never stretch, pad or frame a smaller image to fake the source dimensions. Identity-defining and relationship-defining content must remain complete and readable.
 
 The three fixed modes are:
 
@@ -41,7 +41,7 @@ Cropping is allowed only when the remaining face, body, hand-object connection, 
 1. Write the subject locks from the source image.
 2. Select one mode.
 3. Replace the photograph’s composition, surface and reading order with that mode’s module below.
-4. Set the output canvas to the source image's exact width and height, or use the closest aspect-ratio preset when exact dimensions are unavailable.
+4. Set the output canvas to the source image's exact width and height, or use the closest aspect-ratio preset and recompose/crop within the artwork when exact dimensions are unavailable; do not pad the image with an outer background.
 5. Generate the image and verify its final pixel dimensions.
 6. Reject and regenerate if it reads first as a movie still, a photo filter, generic AI oil painting, or the wrong mode.
 
