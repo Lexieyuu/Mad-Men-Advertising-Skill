@@ -36,7 +36,7 @@
 把我上传的图片转换为 Editorial Commercial Illustration / 编辑式商业插画。
 ```
 
-未指定模式时，默认生成 Premium Commercial Illustration。
+未指定模式时，默认生成 **Editorial Commercial Illustration / 编辑式商业插画**。
 
 ## 展示案例
 

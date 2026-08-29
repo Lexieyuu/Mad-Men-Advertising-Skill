@@ -11,6 +11,8 @@ This file is the complete runtime instruction set. Do not depend on linked promp
 
 Generate exactly one selected mode per image. If the user asks for all three, make three independent images, never a triptych or comparison sheet.
 
+If the user does not specify a mode, use **Editorial Commercial Illustration / 编辑式商业插画** by default.
+
 Match the generated image to the uploaded source image's exact pixel width and height whenever the image tool supports custom dimensions. The artwork itself must fill that canvas: do not add an outer background, letterbox, pillarbox, border, blank margin or solid-color extension merely to reach the target dimensions. Preserve the source orientation. If the tool only offers preset sizes or a different aspect ratio, recompose the artwork inside the target frame and use a deliberate, safe crop or scene extension within the artwork; never stretch, pad or frame a smaller image to fake the source dimensions. Identity-defining and relationship-defining content must remain complete and readable.
 
 The three fixed modes are:
